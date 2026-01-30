@@ -80,6 +80,28 @@
         <img src="https://picsum.photos/200/310" alt="Hero Image" style="width:100%; margin-top:20px; border-radius:10px;" height="100px" />
     </section>
 
+    <!-- Dice Roll Game START -->
+<section style="text-align:center; margin:40px 0;">
+    <h2>Dice Roll Game 🎲</h2>
+
+    <div id="dice" style="font-size:120px; margin:20px;">⚀</div>
+
+    <button onclick="rollDice()" 
+            style="padding:12px 30px; font-size:18px; cursor:pointer;">
+        Roll Dice
+    </button>
+</section>
+
+<script>
+    function rollDice() {
+        const dice = ["⚀","⚁","⚂","⚃","⚄","⚅"];
+        const random = Math.floor(Math.random() * 6);
+        document.getElementById("dice").innerText = dice[random];
+    }
+</script>
+<!-- Dice Roll Game END -->
+
+    
     <div class="container">
         <div class="card">
             <img src="https://picsum.photos/200/300" alt="Feature Image" style="width:100%; border-radius:10px; margin-bottom:15px;" />
@@ -103,6 +125,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
