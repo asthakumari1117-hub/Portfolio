@@ -59,6 +59,45 @@
       min-width: 250px;
     }
 
+    /* Timeline */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #1e88e5;
+}
+
+.timeline-item {
+  margin-left: 60px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -48px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background: #1e88e5;
+  border-radius: 50%;
+}
+
+.timeline-item h4 {
+  margin: 0;
+  color: #1e88e5;
+}
+
     footer {
       background: #1e88e5;
       color: white;
@@ -232,6 +271,36 @@
     </li>
   </ul>
 </section>
+<!-- TRAINING -->
+<section id="training">
+  <h2>Training & Internship</h2>
+
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <h4>Microsoft Elevate – Azure Internship</h4>
+      <p><strong>Jan 2026 | 4 Weeks</strong></p>
+      <ul>
+        <li>Selected for AICTE–Microsoft Elevate Internship Program</li>
+        <li>Learned Azure Fundamentals & emerging technologies</li>
+        <li>Completed Microsoft Learn modules</li>
+        <li>Worked on real-world problem statements</li>
+        <li>Earned co-branded AICTE & Microsoft certificate</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <h4>Web Development Intern – PrernaGati Technology</h4>
+      <p><strong>June 2024 – July 2024</strong></p>
+      <ul>
+        <li>Completed 120-hour ISO-certified Web Development training</li>
+        <li>Designed responsive web applications</li>
+        <li>Worked with HTML, CSS, JavaScript & basic backend concepts</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
 
 <footer>
   <p>© 2025 Astha Kumari | All Rights Reserved</p>
@@ -247,6 +316,7 @@
 
 </body>
 </html>
+
 
 
 
