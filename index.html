@@ -155,6 +155,32 @@ h2 {
   text-decoration: none;
 }
 
+ /* Project screenshots styling */
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin: 15px 0;
+}
+
+.project-images img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.project-images img:hover {
+  transform: scale(1.05);
+}
+
+.project-links a {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+
 /* TIMELINE */
 .timeline {
   max-width: 800px;
@@ -328,16 +354,33 @@ footer {
  
 <div class="card">
   <h3>🎯 Classroom Attention Detection</h3>
+
   <p>
-    AI-based application that detects student attention levels in classrooms
-    using Azure Custom Vision. It analyzes images/video frames to classify
-    attentive and inattentive behavior and stores attendance data.
+    An AI-powered classroom monitoring system that analyzes live camera input
+    to detect student attention levels using <b>Azure Custom Vision</b>.
+    The system classifies behaviors such as <i>Focused</i>, <i>Looking Away</i>,
+    and <i>Sleeping</i>, and automatically marks attendance.
   </p>
 
-  <a href="https://github.com/asthakumari1117-hub/Classroom-Attention-Detection" target="_blank">
-    GitHub →
-  </a>
+  <!-- Tech stack -->
+  <p><b>Tech Stack:</b> Python, Azure Custom Vision, Computer Vision, CSV Data Handling</p>
+
+  <!-- Project screenshots -->
+  <div class="project-images">
+    <img src="images/class_attention.png" alt="Class Attention Dashboard">
+    <img src="images/student_profile.png" alt="Student Profile">
+    <img src="images/student_profile_saved.png" alt="Profile Saved">
+    <img src="images/mark_attendance.png" alt="Attendance Marked">
+  </div>
+
+  <!-- Links -->
+  <div class="project-links">
+    <a href="https://github.com/asthakumari1117-hub/Classroom-Attention-Detection" target="_blank">
+      GitHub →
+    </a>
+  </div>
 </div>
+
 
 <div class="card">
     <h3>🤟 Sign Language AI</h3>
@@ -530,6 +573,7 @@ footer {
 
 </body>
 </html>
+
 
 
 
